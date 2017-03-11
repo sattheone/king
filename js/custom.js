@@ -9,12 +9,56 @@
 // SIDEBAR MENU
 
 
+
 $(function() {
-  $('#main-menu').smartmenus({
-    subMenusSubOffsetX: 6,
-    subMenusSubOffsetY: -8
+    $('#main-menu').smartmenus({
+      mainMenuSubOffsetX: 1,
+      mainMenuSubOffsetY: -8,
+      markCurrentItem: true,
+    markCurrentTree: true,
+    hideOnClick: false
+    });
+$("#main-menu").smartmenus("itemActivate", $("#main-menu").find("a.current").eq( - 1));
+  
+var $mainMenu = $('#main-menu').on('click', 'span.sub-arrow', function(e) {
+    // toggle the sub menu on sub arrow click in collapsible mode
+    var obj = $mainMenu.data('smartmenus');
+    if (obj.isCollapsible()) {
+      var $item = $(this).parent(),
+        $sub = $item.parent().dataSM('sub'),
+        subIsVisible = $sub.dataSM('shown-before') && $sub.is(':visible');
+      $sub.dataSM('arrowClicked', true);
+      obj.itemActivate($item);
+      if (subIsVisible) {
+        obj.menuHide($sub);
+      }
+      e.stopPropagation();
+      e.preventDefault();
+    }
+  }).bind({
+    // don't show the sub menu in collapsible mode unless the sub arrow is clicked
+    'beforeshow.smapi': function(e, menu) {
+      var obj = $mainMenu.data('smartmenus');
+      if (obj.isCollapsible()) {
+        var $menu = $(menu);
+        if (!$menu.dataSM('arrowClicked')) {
+          return false;
+        }
+        $menu.removeDataSM('arrowClicked');
+      }
+    },
+    'show.smapi': function(e, menu) {
+      $(menu).dataSM('parent-a').children('span.sub-arrow').text('-');
+    },
+    'hide.smapi': function(e, menu) {
+      $(menu).dataSM('parent-a').children('span.sub-arrow').text('+');
+    }
   });
+
+
+
 });
+
 
 // SCROLL TO TOP //Scroll Bottom Menu Fade-In
 
