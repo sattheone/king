@@ -16,9 +16,10 @@ $(function() {
       mainMenuSubOffsetY: -8,
       markCurrentItem: true,
     markCurrentTree: true,
-    hideOnClick: false
+    hideOnClick: true
     });
 $("#main-menu").smartmenus("itemActivate", $("#main-menu").find("a.current").eq( - 1));
+
   
 var $mainMenu = $('#main-menu').on('click', 'span.sub-arrow', function(e) {
     // toggle the sub menu on sub arrow click in collapsible mode
