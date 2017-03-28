@@ -16,9 +16,14 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+ <!-- smartmenus -->
+    <link href="css/jquery.smartmenus.bootstrap.css" rel="stylesheet">
 
      <!-- custom style -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
+
+         <!-- custom style -->
+    <link rel="stylesheet" type="text/css" href="css/sidebar.css">
 
 
      <!-- responsive style -->
@@ -38,7 +43,7 @@
   <body>
 
 <a href="javascript:void(0);" id="scroll" title="Scroll to Top" style="display: none;">Top<span></span></a>
-<a href="#subnav" id="scroll-btm">Menu</a>
+
 
 <header id="page-header">
 <nav class="topbar navbar-fixed-top">
@@ -57,7 +62,7 @@
               <li class="#"><a href="#"><i class="fa"></i>ONLINE SERVICES</a></li>  
 
              <li class="top-link-part"><a href="#"><i class="fa"></i>MOBILE APP</a></li>   
-             <li class="top-link-part"><a href="#"><i class="fa"></i>FAQ</a></li>    
+             <li class="top-link-part"><a href="#"><i class="fa"></i>FAQ</a></li>   
               <li class="top-link-part"><a href="#"><i class="fa"></i>SITE MAP</a></li> 
            </ul>
         </div>
@@ -108,7 +113,7 @@
               <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Living in King<span class="caret"></span></a>
        <ul class="dropdown-menu">
-                                <li>
+                          <li>
                           <a href="animal-services.html">Animal Services
 
                           </a>
@@ -542,189 +547,114 @@
 
     </div>
 </div>
-
-
-
-
 </header>
 
+<!-- End Sec Nav -->
 
 
 
-<section id="page">
-      <header class="page-header mb30">
+ <header class="page-header mb30">
         <div class="container">
           <div class="row">
 
             <div class="col-sm-6">
-              <h1>Adoption Centre</h1>
-            </div>
-
-            <div class="col-sm-6 hidden-xs">
-
-                  <ul id="textSize">
-                <li><button id="btn-decrease">A-</button></li>
-                <li><button id="btn-orig">A</button></li>
-                <li><button id="btn-increase">A+</button></li>
-                
-              </ul>
-
+              <h1>Animal Control</h1>
+                 <div class="col-sm-12 row hidden-xs">
 
               <ul id="navTrail">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="template-menu-left.html">Animal Services</a></li>
-                <li id="navTrailLast">Animal Control</li>
+                <li id="navTrailLast">Dog License &amp; Registration</li>
               </ul>
 
         
 
             </div>
+            </div>
+
+         
+
+             <div class="col-sm-6 hidden-xs">
+
+                  <ul id="textSize">
+               <li><button title="Decrease" id="btn-decrease">A-</button></li>
+                <li><button title="Normal"   id="btn-orig">A</button></li>
+                <li><button title="Increase" id="btn-increase">A+</button></li>
+                <li><button title="Bookmark" id="btn-increase"><i class="fa fa-star"></i></button></li>
+                <li><button title="Print" id="btn-increase"><i class="fa fa-print"></i></button></li>
+                <li><button title="Share" id="btn-increase"><i class="fa fa-share"></i></button></li>
+                
+              </ul>
+            </div>
 
             
             
           </div>
         </div>
-      </header>
-      <section class="content">
-        <div class="container">
-          <div class="row">
+</header>
 
-           <div class="col-md-9 col-md-push-3 col-xs-12">
-             
-           
-              <div class="row">
+<section class="content">
+   <div class="container">
+      <div class="row row-offcanvas row-offcanvas-right">
+        <button id="sidebar-button" type="button" class="sidebar-button pull-right visible-xs" data-toggle="offcanvas" aria-expanded="false" aria-controls="navbar">
+            <i class="">Menu</i>
+          </button>
 
-
-                <div class="col-md-12">
-
-                  <a class"fileLink" href="#"><img src="images/pdf-icon.jpg">View our Animal Services Pamphlet information.</a>
-
-                  
-                </div>
-
-
-
-              </div>
-
-           </div>
-
-
-
-
-  <div id="sidebar" class="col-md-3 col-md-pull-9 col-xs-12">
-
-
-  <nav id="subnav" class="">
-
-            <ul class="nav navbar-nav">
-
-            <li class="dropdown active">
-                          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Animal Services <span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                  <li><a href="animal-control.html">Animal Control<i class="fa fa-chevron-right"></i></a></li>
-                  <li><a class="active" href="adoption-centre.html" >Adoption Centre<i class="fa fa-chevron-right"></i></a></li>
-                  <li><a href="#">Dog License &amp; Registration<i class="fa fa-chevron-right"></i></a></li>
-                  <li><a href="#">Pit Bulls &amp; Liability Act<i class="fa fa-chevron-right"></i></a></li>
-                  <li><a href="#">Cruelty to Animals<i class="fa fa-chevron-right"></i></a></li>
-                 <li><a  href="#">Wild Life<i class="fa fa-chevron-right"></i></a></li>
-                  <li><a href="#">Living with Coyotes<i class="fa fa-chevron-right"></i></a></li>
-                </ul>
-                          </li>
-                          <li>
-                          <a href="education.html">Education
-
-                          </a>
-                          </li>
-                          <li>
-                          <a href="/LivingInKing/Fire/Pages/default.aspx">Fire &amp; Emergency Services
-
-                          </a>
-                          </li>
-                          <li>
-                          <a href="/LivingInKing/ParksRecreationCulture/Pages/default.aspx">Parks,Recreation&amp;Culture
-
-                          </a>
-                          </li>
-                          <li>
-                          <a href="/LivingInKing/Seniors/Pages/default.aspx">Seniors
-
-                          </a>
-                          </li>
-                          <li>
-                          <a href="/LivingInKing/Transportation/Pages/default.aspx">Transportation
-
-                          </a>
-                          </li>
-                          <li>
-                          <a href="/LivingInKing/FamilyChildren/Pages/default.aspx">Family &amp; Children
-
-                          </a>
-                          </li>
-                          <li>
-                          <a href="/LivingInKing/PlacesofWorship/Pages/default.aspx">Places of Worship
-
-                          </a>
-                          </li>
-                          <li>
-                          <a href="/LivingInKing/VolunteerInKing/Pages/default.aspx">Volunteer in King
-
-                          </a>
-                          </li>
-                          <li>
-                          <a href="/LivingInKing/Trees/Pages/default.aspx">Trees
-
-                          </a>
-                          </li>
-
-                          <li>
-                          <a href="/LivingInKing/YRTViva/Pages/default.aspx">YRTViva
-
-                          </a>
-                          </li>
-                          <li>
-                          <a href="http://www.kingtownshipfoodbank.ca/">Food Bank
-                          </a>
-                          </li>
-                          <li>
-                          <a href="http://kinglibrary.ca/">King Library
-                          </a>
-                          </li>
-                          <li>
-                          <a href="/LivingInKing/Pages/Internet-Service-Providers.aspx"> Internet Service Providers
-                          </a>
-                          </li>
  
-            </ul>
 
-        </nav>
 
-    <!--     
-                  <nav id="subnav">
-                <ul>
-                  <li><a class="active" href="#">Animal Control<i class="fa fa-chevron-right"></i></a></li>
-                  <li><a href="#">Adoption Centre<i class="fa fa-chevron-right"></i></a></li>
-                  <li><a href="#">Dog License &amp; Registration<i class="fa fa-chevron-right"></i></a></li>
-                  <li><a href="#">Pit Bulls &amp; Liability Act<i class="fa fa-chevron-right"></i></a></li>
-                  <li><a href="#">Cruelty to Animals<i class="fa fa-chevron-right"></i></a></li>
-                 <li><a  href="#">Wild Life<i class="fa fa-chevron-right"></i></a></li>
-                  <li><a href="#">Living with Coyotes<i class="fa fa-chevron-right"></i></a></li>
-                </ul>
-              </nav> -->
-                  <!-- end sidebar -->
-  </div>
-   
 
-          </div>
-        </div>
-      </section>
-      <!--end page content-->
+        <div class="col-xs-12 col-sm-4 col-lg-3" id="sidebar">
+          
 
-    </section>
+
+<nav><!-- Sample menu definition -->
+<ul id="main-menu" class="sm sm-mint sm-vertical sidebar-hide">
+
+ <li><a href="animal-control.html">Animal Control</a></li>
+<li><a href="adoption-centre.html">Adoption Centre</a></li>
+<li><a href="#">Dog License &amp; Registration</a></li>
+<li><a href="#">Pit Bulls &amp; Liability Act</a>
+<li><a href="#">Cruelty to Animals</a>
+<li><a href="#">Wild Life</a>
+<li><a href="#">Living with Coyotes</a>
+<ul>
+<li><a href="#">Cruelty to Animals</a>
+<li><a href="#">Wild Life</a>
+<li><a href="#">Living with Coyotes</a>
+</ul>
+</li>
+
+
+</ul>
+</nav>
+
+
+</div>
+
+
+
+        <div class="col-xs-12 col-sm-8 col-lg-9">
+          
+          
+
+            
+      <a class"fileLink" href="#"><img src="images/pdf-icon.jpg">Animal Control Information Pamphlet</a>
+
+                 
+        </div><!--/.col-xs-12.col-sm-9-->
+
+
+      </div><!--/row-->
+
+ 
+
+    </div><!--/.container-->
+</section>
 
 
 
 <!-- FOOTER -->
-
 
 
 <div class="footer">
@@ -861,6 +791,11 @@
    <script src="js/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+
+
+<script src='https://vadikom.github.io/smartmenus/src/libs/jquery/jquery.js'></script>
+<script src='https://vadikom.github.io/smartmenus/src/jquery.smartmenus.js'></script>
+
 
      <!-- Owl Carousel -->
          <script src="js/owl.carousel.js"></script>
