@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="10px" viewBox="0 0 10 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>bullet copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.5">
+        <g id="home-4" transform="translate(-143.000000, -967.000000)" fill="#CDCDCD">
+            <g id="Footer" transform="translate(0.000000, 849.000000)">
+                <g id="Group-11" transform="translate(135.000000, 28.000000)">
+                    <g id="Group-12">
+                        <g id="bullet" transform="translate(8.000000, 90.000000)">
+                            <path d="M10,0.0366360674 C9.25306276,0.467683356 8.62885467,0.925876942 8.07185316,1.49285533 C7.12871754,2.45285622 6.40813949,3.57573491 5.96853921,4.87666137 C5.32199124,6.7904754 4.06357351,8.08261924 2.43752918,9.02994521 C1.77359536,9.41677996 1.07900261,9.7293616 0.352348862,9.95761007 C0.074175264,10.0450371 0.013511734,10.0131003 0.0053796429,9.71039912 C-0.0915511439,6.12908379 1.11508292,3.28980055 4.137884,1.50143835 C5.51155308,0.68864624 7.01010118,0.308997274 8.55632015,0.113084834 C8.86646128,0.0737626224 9.17791102,0.0454186933 9.48898687,0.0146795026 C9.63199951,0.000507538005 9.77604034,-0.0175567267 10,0.0366360674" id="Fill-12"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
